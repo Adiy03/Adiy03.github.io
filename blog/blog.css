@@ -1,0 +1,92 @@
+body {
+    font-size: 16px;
+    font-family: 'Karla', sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.container{
+    display: flex;
+    flex-direction: row;
+}
+
+h1 {
+    font-size: 22px;
+}
+
+h2 {
+    font-size: 21px;
+    /* font-weight: 500; */
+}
+
+article {
+    font-size: 1.1rem;
+    line-height: 1.75rem;
+    text-align: justify;
+    color: rgb(45 52 65 / var(--tw-text-opacity));
+    margin-bottom: 3rem;
+}
+
+.left {
+    display: flex;
+    /* flex: 1.5; */
+    position: fixed;
+    width: 230px;
+    height: 100vh;
+    padding: 1rem;
+    /* align-items: center; */
+    justify-content: center;
+    text-align: center;
+    background-color: #eee;
+}
+
+.profile-img{
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+}
+
+.profile-img img{
+    width: 130px;
+    border-radius: 50%;
+}
+
+.profile-card p{
+    padding: 0 1rem;
+}
+
+
+.mid {
+    flex: 3;
+    margin-left: 300px;
+    background-color: white;
+}
+
+.right {
+    flex: 1.2;
+}
+
+.left.sticky {
+    position: sticky; /* Standar */
+    top: 0; /* Tetapkan elemen sticky ke bagian atas */
+    z-index: 100; /* Tetapkan z-index untuk memastikan elemen tetap di depan elemen lain */
+}
+
+@media (max-width: 767px){
+    .container{
+        flex-direction: column;
+    }
+    .left{
+        position: relative;
+        width: auto;
+        height: auto;
+    }
+    .mid{
+        margin: 0 2rem;
+    }
+}
+
+.title{
+    text-align: left;
+}
