@@ -796,15 +796,20 @@ a:focus {
 .contact_section .info_contact .contact_link_box a {
   margin: 5px 0;
   color: #ffffff;
+  text-decoration: none;
 }
 
 .contact_section .info_contact .contact_link_box a i {
   margin-right: 5px;
 }
 
-.contact_section .info_contact .contact_link_box a:hover {
-  color: #85310c;
+.contact_section .info_contact .contact_link_box {
+  color: teal;
 }
+
+/* .contact_section .info_contact .contact_link_box a:hover {
+  color: blue;
+} */
 
 .contact_section .info_social {
   display: -webkit-box;
@@ -878,6 +883,7 @@ a:focus {
 
 .footer_section .link_box a:hover {
   color: #85310c;
+  /* text-decoration: none; */
 }
 /*# sourceMappingURL=style.css.map */
 
@@ -1313,6 +1319,6 @@ a:focus {
   display: flex;
   flex-direction: column;
   height: 100vh;
-  margin-top: 8rem;
+  margin-top: 3rem;
   align-items: center;
 }
