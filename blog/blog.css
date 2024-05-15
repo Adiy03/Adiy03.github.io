@@ -6,7 +6,7 @@ body {
     box-sizing: border-box;
 }
 
-.container{
+.container {
     display: flex;
     flex-direction: row;
 }
@@ -41,18 +41,18 @@ article {
     background-color: #eee;
 }
 
-.profile-img{
+.profile-img {
     width: 100%;
     justify-content: center;
     align-items: center;
 }
 
-.profile-img img{
+.profile-img img {
     width: 130px;
     border-radius: 50%;
 }
 
-.profile-card p{
+.profile-card p {
     padding: 0 1rem;
 }
 
@@ -68,29 +68,90 @@ article {
 }
 
 .left.sticky {
-    position: sticky; /* Standar */
-    top: 0; /* Tetapkan elemen sticky ke bagian atas */
-    z-index: 100; /* Tetapkan z-index untuk memastikan elemen tetap di depan elemen lain */
+    position: sticky;
+    /* Standar */
+    top: 0;
+    /* Tetapkan elemen sticky ke bagian atas */
+    z-index: 100;
+    /* Tetapkan z-index untuk memastikan elemen tetap di depan elemen lain */
 }
 
-@media (max-width: 767px){
-    .container{
+@media (max-width: 767px) {
+    .container {
         flex-direction: column;
     }
-    .left{
+
+    .left {
         position: relative;
         width: auto;
         height: auto;
     }
-    .mid{
+
+    .mid {
         margin: 0 2rem;
     }
 }
 
-.title{
+.title {
     text-align: left;
 }
 
-h3,h4{
+h3,
+h4 {
     text-transform: capitalize;
+}
+
+.video-container {
+    width: 100%;
+    text-align: center;
+}
+
+h1 {
+    text-transform: capitalize;
+    font-size: 24px;
+}
+
+img {
+    width: 100%;
+    height: auto;
+    max-width: 600px;
+    margin: 1rem 0;
+}
+
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%;
+    /* 16:9 aspect ratio */
+    height: 0;
+    overflow: hidden;
+    max-width: 100%;
+    background: #000;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    border: 0;
+}
+
+/* Optional: For better handling on very small screens */
+@media (max-width: 480px) {
+    .video-container iframe {
+        width: 100vw;
+        height: calc(100vw * 9 / 16);
+        /* Maintains the 16:9 aspect ratio */
+    }
+}
+
+h2,
+h3{
+    text-transform: capitalize;
+}
+
+h3{
+    font-size: 18px;
 }
